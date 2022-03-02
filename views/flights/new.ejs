@@ -1,7 +1,8 @@
 <%- include('../partials/html-head') %>
 <link rel="stylesheet" href="/stylesheets/style.css">
 
-<h1>Enter a Flight</h1>
+<main>
+<h1><%= title %> </h1>
 <form action="/flights" method="POST">
   <label>Airline:
     <select name="airline">
@@ -27,5 +28,6 @@
   </label><br>
   <button type="submit">ADD FLIGHT</button>
 </form>
+</main>
 
 <%- include('../partials/footer') %>
